@@ -5,8 +5,7 @@ duckdb_extension_load(nanoarrow
                       SOURCE_DIR
                       ${CMAKE_CURRENT_LIST_DIR}
                       LOAD_TESTS
-                      LINKED_LIBS
-                      "../../_deps/nanoarrow-build/libflatccrt.a;../../_deps/nanoarrow-build/libnanoarrow.a;../../_deps/nanoarrow-build/libnanoarrow_ipc.a"
+                      LINKED_LIBS "../../_deps/nanoarrow-build/lib*.a"
 )
 # Any extra extensions that should be built
 # e.g.: duckdb_extension_load(json)
